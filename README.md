@@ -48,20 +48,13 @@ Easily upload **contracts, statutes, or case law documents**, ask questions in p
 
 ## ⚙️ ***Installation***
 
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/<your-username>/legal-rag-assistant.git
-cd legal-rag-assistant
-```
-
-### 2️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run App
+### Run App
 
 ```bash
 streamlit run app.py
