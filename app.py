@@ -9,7 +9,7 @@ from typing import List, Dict, Any, Tuple
 
 import streamlit as st
 
-# --- Optional dependencies, imported lazily where possible ---
+
 try:
     from pypdf import PdfReader
 except Exception:
@@ -39,7 +39,6 @@ except Exception as e:
     OPENAI_IMPORT_ERROR = e
     OpenAI = None
 
-# -------------- Utilities --------------
 
 @dataclass
 class Chunk:
@@ -82,11 +81,11 @@ def detect_sections(text: str) -> List[Tuple[str, Tuple[int, int]]]:
     if not headings:
         return [("Document", (0, len(text)))]
     headings = sorted(headings, key=lambda x: x[0])
-    # Create spans between headings
+    
     for idx, (s, e, title) in enumerate(headings):
         next_start = headings[idx + 1][0] if idx + 1 < len(headings) else len(text)
         spans.append((title, (s, next_start)))
-    # Deduplicate overlaps
+    
     dedup = []
     last_end = -1
     for title, (s, e) in spans:
@@ -119,7 +118,7 @@ def split_into_chunks(text: str, max_chars: int = 1200, overlap: int = 150) -> L
                 cur = p
     if cur:
         chunks.append(cur)
-    # Add overlaps between chunks
+    
     with_overlap = []
     for i, ch in enumerate(chunks):
         if i == 0:
@@ -153,7 +152,7 @@ def extract_text_from_docx(file_bytes: bytes) -> str:
     if docx2txt is None:
         raise RuntimeError("docx2txt not installed")
     tmp = io.BytesIO(file_bytes)
-    # docx2txt expects a path; write temp
+    
     import tempfile, shutil, zipfile
     with tempfile.NamedTemporaryFile(suffix=".docx", delete=False) as fp:
         fp.write(tmp.read())
