@@ -46,21 +46,10 @@ Easily upload **contracts, statutes, or case law documents**, ask questions in p
 
 ---
 
-## ⚙️ ***Installation***
 
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
 ```
 
-### Run App
-
-```bash
-streamlit run app.py
-```
-
-👉 App will run locally at: ***https://bhavyadashottar18-multi-document-legal-research-83ff8ff.hf.space/***
+👉 App will run at: ***https://bhavyadashottar18-multi-document-legal-research-83ff8ff.hf.space/***
 
 ---
 
