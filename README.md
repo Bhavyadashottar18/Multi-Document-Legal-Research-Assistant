@@ -67,7 +67,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-👉 App will run locally at: ***[[http://localhost:8501](http://localhost:8501)](https://bhavyadashottar18-multi-document-legal-research-83ff8ff.hf.space/)***
+👉 App will run locally at: ***https://bhavyadashottar18-multi-document-legal-research-83ff8ff.hf.space/***
 
 ---
 
