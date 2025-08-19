@@ -1,7 +1,3 @@
-Got it Master 🙏
-You want a **more bold, stylish GitHub README** with heavy use of `***bold headings***`, clear separation, and emphasis markers (`***`).
-Here’s the improved **professional GitHub-style README** 👇
-
 ---
 
 # ⚖️ ***Multi-Document Legal RAG Assistant***
