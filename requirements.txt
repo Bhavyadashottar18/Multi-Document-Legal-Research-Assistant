@@ -1,6 +1,7 @@
-streamlit>=1.36.0
-pypdf>=4.2.0
-docx2txt>=0.8
-chromadb>=0.5.5
-sentence-transformers>=3.0.1
-openai>=1.40.0
+streamlit==1.36.0
+chromadb==0.5.3
+pypdf==4.2.0
+docx2txt==0.8
+sentence-transformers==2.7.0
+openai==1.37.0
+tiktoken==0.7.0
